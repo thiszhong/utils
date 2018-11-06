@@ -6,7 +6,7 @@
 * 将url的所有参数输出为一个对象
 * @param {String} url decode之后的url
 */
- const urlToObj = function (url) {
+export const urlToObj = function (url) {
   let obj = {}
   let arr
   let paramPart
@@ -28,7 +28,7 @@
   * 格式：Date => 2018-10-08 11:32:00
   * @param {Date} date 需要格式化的时间
   */
- const formatTime = date => {
+export const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   const day = date.getDate()
